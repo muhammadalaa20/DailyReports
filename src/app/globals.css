@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-gray-100 min-h-screen;
+}
+
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+  }
+    /* Ensure the table and the heading stay together */
+    .print-block {
+      page-break-inside: avoid;  /* Prevent breaks inside the block */
+      margin-bottom: 10px;  /* Optional: space between sections */
+    }
+
+  /* Make sure tables fit properly */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto; /* Prevent breaking inside tables */
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  /* Prevent page breaks inside table rows */
+  tr {
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 20mm;
+     size: A4;
+   }
+}
