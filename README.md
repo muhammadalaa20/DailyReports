@@ -62,6 +62,10 @@ Install with npm
 
 ```
 
+## DEMO
+
+![App Demo](https://github.com/muhammadalaa20/DailyReports/blob/main/dailyreports.gif)
+
 
 ## Authors
 
